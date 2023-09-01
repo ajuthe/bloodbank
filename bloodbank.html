@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Bank Application</h1>
+        <div class="menu">
+            <button id="checkBtn">Check Blood Availability</button>
+            <button id="donateBtn">Donate Blood</button>
+            <button id="distributeBtn">Distribute Blood</button>
+        </div>
+        <div class="content" id="content">
+            <!-- Content will be dynamically updated here -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
